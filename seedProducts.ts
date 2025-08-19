@@ -6,7 +6,7 @@ import Product from './models/Product';
 // Load .env (if present)
 dotenv.config();
 
-const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://themasterskimaru:9A2xLSJhieilphoa@electro.4nkztcr.mongodb.net/?retryWrites=true&w=majority&appName=Electro';
+const MONGO_URI = process.env.MONGO_URI as string;
 
 // Plain object shape for seed items with updated working image URLs
 const products: { name: string; category: string; price: number; image: string }[] = [
